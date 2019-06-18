@@ -15,3 +15,13 @@ deploy:
   fqdn: gitmoji.js.org
   on:
     branch: i18n/cn
+
+# blocklist
+branches:
+  except:
+  - i18n/cn
+
+# safelist
+branches:
+  only:
+  - i18n/cn
