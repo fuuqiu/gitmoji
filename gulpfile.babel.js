@@ -18,7 +18,9 @@ const baseDirs = {
 const routes = {
   templates: {
     pug: `${baseDirs.src}templates/*.pug`,
-    _pug: `${baseDirs.src}templates/_includes/*.pug`
+    _pug: `${baseDirs.src}templates/_includes/*.pug`,
+    pug_zh_CN: `${baseDirs.src}templates/zh-CN/*.pug`,
+    _pug_zh_CN: `${baseDirs.src}templates/zh-CN/_includes/*.pug`
   },
   styles: {
     scss: `${baseDirs.src}styles/*.scss`,
@@ -34,7 +36,7 @@ const routes = {
 }
 
 gulp.task('templates', ['styles'], () => {
-  return gulp.src([routes.templates.pug, '!' + routes.templates._pug])
+  return gulp.src([routes.templates.pug, '!' + routes.templates._pug, routes.templates.pug_zh_CN, '!' + routes.templates._pug_zh_CN])
     .pipe(pugLint())
     .pipe(plumber({}))
     .pipe(pug({
