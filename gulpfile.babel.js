@@ -7,6 +7,7 @@ import pugLint from "gulp-pug-lint";
 import browserSync from "browser-sync";
 import plumber from "gulp-plumber";
 import gitmojis from "./src/data/gitmojis.json";
+import gitmojisZhCN from "./src/data/zh-CN/gitmojis";
 import contributors from "./src/data/contributors.json";
 import ghPages from "gulp-gh-pages";
 
@@ -56,7 +57,7 @@ gulp.task("templates-zh-CN", ["templates"], () => {
     .pipe(plumber({}))
     .pipe(
       pug({
-        locals: { emojis: gitmojis, contributors: contributors }
+        locals: { emojis: gitmojisZhCN, contributors: contributors }
       })
     )
     .pipe(gulp.dest(routes.files.html + "zh-CN/"))

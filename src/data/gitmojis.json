@@ -395,43 +395,43 @@
 			"emoji": "🙈",
 			"entity": "&#8bdfe7;" ,
 			"code": ":see_no_evil:",
-			"description": "Adding or updating a .gitignore file",
+			"description": "Adding or updating a .gitignore file.",
 			"name": "see-no-evil"
 		},
 		{
 			"emoji": "📸",
 			"entity": "&#128248;" ,
 			"code": ":camera_flash:",
-			"description": "Adding or updating snapshots",
+			"description": "Adding or updating snapshots.",
 			"name": "camera-flash"
 		},
 		{
 			"emoji": "⚗",
 			"entity": "&#128248;" ,
 			"code": ":alembic:",
-			"description": "Experimenting new things",
+			"description": "Experimenting new things.",
 			"name": "alembic"
 		},
 		{
 			"emoji": "🔍",
 			"entity": "&#128269;" ,
 			"code": ":mag:",
-			"description": "Improving SEO",
+			"description": "Improving SEO.",
 			"name": "mag"
 		},
 		{
 		  "emoji":"☸️",
 		  "entity":"&#9784;",
 		  "code":":wheel_of_dharma:",
-		  "description":"Work about Kubernetes",
+		  "description":"Work about Kubernetes.",
 		  "name":"wheel-of-dharma"
 		},
 		{
 		  "emoji": "🏷️",
 		  "entity": "&#127991;",
 		  "code": ":label:",
-		  "description": "Adding or updating types (Flow, TypeScript)",
-		  "name": "label"		
+		  "description": "Adding or updating types (Flow, TypeScript).",
+		  "name": "label"
 		}
 	]
 }

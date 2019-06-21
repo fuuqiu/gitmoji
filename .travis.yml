@@ -1,27 +1,26 @@
 language: node_js
 node_js:
-- 6
+    - 6
+	- 8
+	- 10
 cache:
-  directories:
-    - node_modules
+    directories:
+        - node_modules
 script: npm test
 deploy:
-  provider: pages
-  local-dir: dist
-  skip-cleanup: true
-  github-token: $GITHUB_PAGES_DEPLOY_TOKEN
-  keep-history: true
-  target-branch: gh-pages
-  fqdn: gitmoji.js.org
-  on:
-    branch: i18n/cn
+    provider: pages
+    local-dir: dist
+    skip-cleanup: true
+    github-token: $GITHUB_PAGES_DEPLOY_TOKEN
+    keep-history: true
+    target-branch: gh-pages
+    fqdn: gitmoji.js.org
+    on:
+        branch: i18n/cn
 
 # blocklist
 branches:
-  except:
-  - i18n/cn
-
-# safelist
-branches:
-  only:
-  - i18n/cn
+    except:
+        - i18n/cn
+    only:
+        - i18n/cn
