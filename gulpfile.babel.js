@@ -9,7 +9,7 @@ import plumber from "gulp-plumber";
 import gitmojis from "./src/data/gitmojis.json";
 import gitmojisZhCN from "./src/data/zh-CN/gitmojis.json";
 import contributors from "./src/data/contributors.json";
-import contributorsToJeffTian from './src/data/contributors_to_jeff_tian.json';
+import contributorsToJeffTian from './src/data/zh-CN/contributors.json';
 import ghPages from "gulp-gh-pages";
 
 const baseDirs = {
