@@ -20,7 +20,5 @@ deploy:
 
 # blocklist
 branches:
-    except:
-        - master
     only:
         - i18n/cn
