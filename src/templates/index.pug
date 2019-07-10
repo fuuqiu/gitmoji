@@ -14,13 +14,17 @@ html
 			h2 git 提交信息的 emoji 指南
 			div.header-buttons
 				a.btn.btn-pink(href="https://github.com/jeff-tian/gitmoji/")
-					svg.icon.icon-star
-						use(xlink:href='#icon-star')
+					svg.icon.icon-github
+						use(xlink:href='#icon-github')
 					| GitHub
 				a.btn.btn-pink(href="https://twitter.com/intent/tweet?text=gitmoji%20-%20%40zizhujy%20%E5%88%B6%E4%BD%9C%E7%9A%84%20git%20%E6%8F%90%E4%BA%A4%E4%BF%A1%E6%81%AF%E7%9A%84%20%23emoji%20%E6%8C%87%E5%8D%97%E3%80%82&url=https://gitmoji.js.org", target="_blank")
 					svg.icon.icon-twitter
 						use(xlink:href='#icon-twitter')
 					| 推特
+				a.btn.btn-pink(href="/static/wechat/qrcode_for_gh_e94fc16b2540_258.jpg", target="_blank")
+					svg.icon.icon-wechat
+						use(xlink:href='#icon-wechat')
+					| 微信
 		main.wrap
 			.row.center-xs#gitmoji-list
 				each gitmoji in emojis.gitmojis
