@@ -109,15 +109,6 @@
             "collect":0
         },
         {
-            "emoji":"⚡️",
-            "entity":"⚡",
-            "code":":zap:",
-            "description":"性能改善",
-            "name":"zap",
-            "wid":1,
-            "collect":0
-        },
-        {
             "emoji":"🔥",
             "entity":"🔥",
             "code":":fire:",
@@ -311,15 +302,6 @@
             "code":":whale:",
             "description":"Docker 容器相关",
             "name":"whale",
-            "wid":0,
-            "collect":0
-        },
-        {
-            "emoji":"➕",
-            "entity":"➕",
-            "code":":heavy_plus_sign:",
-            "description":"添加依赖",
-            "name":"heavy-plus-sign",
             "wid":0,
             "collect":0
         },
