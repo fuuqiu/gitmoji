@@ -10,24 +10,6 @@
             "collect":0
         },
         {
-            "emoji":"🔧",
-            "entity":"🔧",
-            "code":":wrench:",
-            "description":"修改配置文件",
-            "name":"wrench",
-            "wid":1,
-            "collect":0
-        },
-        {
-            "emoji":"➕",
-            "entity":"➕",
-            "code":":heavy_plus_sign:",
-            "description":"添加依赖",
-            "name":"heavy-plus-sign",
-            "wid":1,
-            "collect":0
-        },
-        {
             "emoji":"⚡️",
             "entity":"⚡",
             "code":":zap:",
@@ -78,6 +60,24 @@
             "code":":ambulance:",
             "description":"重要补丁",
             "name":"ambulance",
+            "wid":1,
+            "collect":0
+        },
+        {
+            "emoji":"🔧",
+            "entity":"🔧",
+            "code":":wrench:",
+            "description":"修改配置文件",
+            "name":"wrench",
+            "wid":9,
+            "collect":0
+        },
+        {
+            "emoji":"➕",
+            "entity":"➕",
+            "code":":heavy_plus_sign:",
+            "description":"添加依赖",
+            "name":"heavy-plus-sign",
             "wid":1,
             "collect":0
         },

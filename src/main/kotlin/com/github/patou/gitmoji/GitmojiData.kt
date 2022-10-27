@@ -9,7 +9,7 @@ const val CONFIG_AFTER_UNICODE: String = "com.github.patou.gitmoji.text-after-un
 const val CONFIG_INSERT_IN_CURSOR_POSITION: String = "com.github.patou.gitmoji.insert-in-cursor-position"
 const val CONFIG_INCLUDE_GITMOJI_DESCRIPTION: String = "com.github.patou.gitmoji.include-gitmoji-description"
 
-data class GitmojiData(val code: String, val emoji: String, val description: String) {
+data class GitmojiData(val code: String, val emoji: String, val description: String, val wid: Int) {
     private lateinit var _icon: Icon
 
     fun getIcon(): Icon {

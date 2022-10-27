@@ -58,7 +58,7 @@ class GitCommitAction : AnAction() {
 
         when {
             commitMessage != null && project != null -> {
-                createPopup(project, commitMessage, gitmojis)
+                createPopup(project, commitMessage,  gitmojis.sortedByDescending { gitmoji->gitmoji.wid })
                     .showInBestPositionFor(actionEvent.dataContext)
             }
         }
@@ -81,7 +81,7 @@ class GitCommitAction : AnAction() {
 
         return JBPopupFactory.getInstance().createPopupChooserBuilder(listGitmoji)
             .setFont(commitMessage.editorField.editor?.colorsScheme?.getFont(EditorFontType.PLAIN))
-            .setVisibleRowCount(12)
+            .setVisibleRowCount(20)
             .setSelectionMode(ListSelectionModel.SINGLE_SELECTION)
             .setItemSelectedCallback {
                 selectedMessage = it
@@ -229,7 +229,7 @@ class GitCommitAction : AnAction() {
     private fun loadGitmojiFromHTTP() {
         val client = OkHttpClient().newBuilder().addInterceptor(SafeGuardInterceptor()).build()
         val request: Request = Builder()
-            .url("https://raw.githubusercontent.com/jeff-tian/gitmoji/i18n%2Fcn/src/data/zh-CN/gitmojis.json")
+            .url("https://raw.githubusercontent.com/fuuqiu/gitmoji/master/src/main/resources/gitmojis.json")
             .build()
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
@@ -260,7 +260,7 @@ class GitCommitAction : AnAction() {
         Gson().fromJson(text, Gitmojis::class.java).also {
             //排序
             it.gitmojis.forEach { gitmoji ->
-                gitmojis.add(GitmojiData(gitmoji.code, gitmoji.emoji, gitmoji.description))
+                gitmojis.add(GitmojiData(gitmoji.code, gitmoji.emoji, gitmoji.description,gitmoji.wid))
             }
         }
     }
