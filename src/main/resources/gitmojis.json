@@ -145,15 +145,6 @@
             "collect":0
         },
         {
-            "emoji":"📝",
-            "entity":"📝",
-            "code":":pencil:",
-            "description":"写文档",
-            "name":"pencil",
-            "wid":1,
-            "collect":0
-        },
-        {
             "emoji":"🚀",
             "entity":"🚀",
             "code":":rocket:",
@@ -253,15 +244,6 @@
             "collect":0
         },
         {
-            "emoji":"🚧",
-            "entity":"🚧",
-            "code":":construction:",
-            "description":"进行中",
-            "name":"construction",
-            "wid":0,
-            "collect":0
-        },
-        {
             "emoji":"💚",
             "entity":"💚",
             "code":":green_heart:",
@@ -351,15 +333,6 @@
             "collect":0
         },
         {
-            "emoji":"🔧",
-            "entity":"🔧",
-            "code":":wrench:",
-            "description":"改变配置文件",
-            "name":"wrench",
-            "wid":0,
-            "collect":0
-        },
-        {
             "emoji":"🌐",
             "entity":"🌐",
             "code":":globe_with_meridians:",
@@ -373,7 +346,7 @@
             "entity":"",
             "code":":pencil2:",
             "description":"修正拼写错误",
-            "name":"pencil",
+            "name":"pencil2",
             "wid":0,
             "collect":0
         },
@@ -634,7 +607,9 @@
             "entity":"🏷",
             "code":":label:",
             "description":"添加或者更新类型（Flow, TypeScript）",
-            "name":"label"
+            "name":"label",
+            "wid":0,
+            "collect":0
         }
     ]
 }

@@ -1,6 +1,7 @@
 package com.github.patou.gitmoji
 
 import com.github.patou.gitmoji.Gitmojis.Companion.insertAt
+import com.github.patou.gitmoji.PinYinUtil.ABBREVIATIONCASE
 import com.google.gson.Gson
 import com.intellij.ide.TextCopyProvider
 import com.intellij.ide.util.PropertiesComponent
@@ -81,7 +82,7 @@ class GitCommitAction : AnAction() {
 
         return JBPopupFactory.getInstance().createPopupChooserBuilder(listGitmoji)
             .setFont(commitMessage.editorField.editor?.colorsScheme?.getFont(EditorFontType.PLAIN))
-            .setVisibleRowCount(20)
+            .setVisibleRowCount(14)
             .setSelectionMode(ListSelectionModel.SINGLE_SELECTION)
             .setItemSelectedCallback {
                 selectedMessage = it
@@ -136,7 +137,7 @@ class GitCommitAction : AnAction() {
                     }
                 }
             })
-            .setNamerForFiltering { "${it.code} ${it.description}" }
+            .setNamerForFiltering { "${it.code} ${PinYinUtil.getPinyin(it.description,ABBREVIATIONCASE)}" }
             .setAutoPackHeightOnFiltering(false)
             .createPopup()
             .apply {
