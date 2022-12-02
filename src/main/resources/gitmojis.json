@@ -109,24 +109,6 @@
             "collect":0
         },
         {
-            "emoji":"🔥",
-            "entity":"🔥",
-            "code":":fire:",
-            "description":"删除代码或者文件",
-            "name":"fire",
-            "wid":1,
-            "collect":0
-        },
-        {
-            "emoji":"🚑",
-            "entity":"🚑",
-            "code":":ambulance:",
-            "description":"重大热修复",
-            "name":"ambulance",
-            "wid":1,
-            "collect":0
-        },
-        {
             "emoji":"✨",
             "entity":"✨",
             "code":":sparkles:",
@@ -217,15 +199,6 @@
             "collect":0
         },
         {
-            "emoji":"🔖",
-            "entity":"🔖",
-            "code":":bookmark:",
-            "description":"发布 / 版本标签",
-            "name":"bookmark",
-            "wid":0,
-            "collect":0
-        },
-        {
             "emoji":"🚨",
             "entity":"🚨",
             "code":":rotating_light:",
@@ -284,15 +257,6 @@
             "code":":chart_with_upwards_trend:",
             "description":"添加分析或者跟踪代码",
             "name":"chart-with-upwards-trend",
-            "wid":0,
-            "collect":0
-        },
-        {
-            "emoji":"♻️",
-            "entity":"♲",
-            "code":":recycle:",
-            "description":"代码重构",
-            "name":"recycle",
             "wid":0,
             "collect":0
         },
